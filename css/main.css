@@ -1,0 +1,338 @@
+/*============================================================
+                ------ TABLE OF CONTENTS ------
+==============================================================
+
+    1. GENERAL
+    2. INPUT
+    3. RESULTS
+    4. LINKS
+    5. LINK COLORS
+    6. LINK MEDIA QUERIES
+
+==============================================================
+
+============================================================*/
+
+
+/*============================================================
+    1. GENERAL
+============================================================*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ek Mukta", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #DEF1F7;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: Oswald, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #62492E;
+}
+
+@media (max-width: 450px){
+  h1 {
+    line-height: 1;
+  }
+}
+
+
+/*============================================================
+    2. INPUT
+============================================================*/
+.input-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 450px){
+  .input-wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#input,
+#btn {
+  border: 0;
+  font-family: "Ek Mukta", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+#input {
+  padding: 8px;
+  color: #444;
+}
+
+#btn {
+  padding: 8px 14px;
+  color: #fff;
+  background-color: #4CE09C;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+#btn:hover {
+  background-color: #45C98C;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 450px){
+  #input,
+  #btn {
+    display: block;
+    width: 100%;
+  }
+
+  #btn {
+    margin-top: 10px;
+  }
+}
+
+
+/*============================================================
+    3. RESULTS
+============================================================*/
+
+#queryResults {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+#queryResults > p {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+
+/*============================================================
+    4. LINKS
+============================================================*/
+@keyframes fade-in-up {
+  0%   {opacity: 0; top: 30px;}
+  100% {opacity: 1; top: 0;}
+}
+
+@keyframes fade-in {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  width: 23.5%;
+  height: 200px;
+  margin: 10px;
+  border-bottom: 0 solid #fff;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s ease-out;
+  animation: fade-in-up .5s;
+}
+
+a:hover {
+  border-bottom: 8px solid #fff;
+  transition: all .3s ease-out;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: Oswald, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+p {
+  margin-top: 5px;
+  line-height: 1.35;
+  animation: fade-in .4s;
+}
+
+p:first-letter {
+  text-transform: uppercase;
+}
+
+
+/*============================================================
+    5. LINK COLORS
+============================================================*/
+
+a.red {
+  background-color: #ce4343;
+}
+
+a.red:hover {
+  background-color: #a93737;
+  transition: all .3s ease-out;
+}
+
+
+a.orange {
+  background-color: #e28d47;
+}
+
+a.orange:hover {
+  background-color: #b97339;
+  transition: all .3s ease-out;
+}
+
+
+a.yellow {
+  background-color: #e0cc47;
+}
+
+a.yellow:hover {
+  background-color: #bdac3c;
+  transition: all .3s ease-out;
+}
+
+
+a.lime {
+  background-color: #a8d251;
+}
+
+a.lime:hover {
+  background-color: #89ad40;
+  transition: all .3s ease-out;
+}
+
+a.green {
+  background-color: #4caf50;
+}
+
+a.green:hover {
+  background-color: #3b883e;
+  transition: all .3s ease-out;
+}
+
+
+a.light-teal {
+  background-color: #46bfb3;
+}
+
+a.light-teal:hover {
+  background-color: #399c92;
+  transition: all .3s ease-out;
+}
+
+
+a.teal {
+  background-color: #4a7fa7;
+}
+
+a.teal:hover {
+  background-color: #38617f;
+  transition: all .3s ease-out;
+}
+
+
+a.purple {
+  background-color: #5f49a7;
+}
+
+a.purple:hover {
+  background-color: #46357b;
+  transition: all .3s ease-out;
+}
+
+
+a.violet {
+  background-color: #962bbb;
+}
+
+a.violet:hover {
+  background-color: #7c249a;
+  transition: all .3s ease-out;
+}
+
+
+a.pink {
+  background-color: #f168bc;
+}
+
+a.pink:hover {
+  background-color: #bf5295;
+  transition: all .3s ease-out;
+}
+
+
+/*============================================================
+    6. LINK MEDIA QUERIES
+============================================================*/
+
+@media (max-width: 1870px) {
+  a {
+    width: 23%;
+  }
+}
+
+@media (max-width: 1200px) {
+  a {
+    width: 31%;
+  }
+}
+
+@media (max-width: 970px) {
+  a {
+    width: 47%;
+  }
+}
+
+@media (max-width: 760px) {
+  a {
+    width: 46%;
+  }
+}
+
+@media (max-width: 575px) {
+  a {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/*@media (max-width: 450px) {
+  a {
+    margin: 10px;
+  }
+}*/
+

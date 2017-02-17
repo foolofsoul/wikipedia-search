@@ -42,8 +42,6 @@ function search(event){
     xhr.onreadystatechange = function(){
       if (this.readyState === 4 && this.status === 200){
         results = JSON.parse(xhr.responseText);
-        // queryResults.innerHTML = xhr.responseText;
-        console.log(results);
         
         if(results.hasOwnProperty('query')){
           

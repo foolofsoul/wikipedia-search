@@ -56,6 +56,7 @@ function search(event){
             link.setAttribute("href", "https://en.wikipedia.org/?curid=" + results.query.pages[x].pageid)
             link.setAttribute("target", "blank_");
             link.className = selectedColor;
+            link.className += " search-link";
             link.appendChild(title);
 
             if(results.query.pages[x].terms) {

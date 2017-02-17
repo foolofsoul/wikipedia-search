@@ -49,6 +49,10 @@ h1 {
 /*============================================================
     2. INPUT
 ============================================================*/
+form {
+  text-align: center;
+}
+
 .input-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -57,7 +61,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 450px){
@@ -96,6 +100,15 @@ h1 {
 #btn:hover {
   background-color: #45C98C;
   transition: all .3s ease-in-out;
+}
+
+.random-wiki {
+  text-decoration: none;
+  color: #777;
+}
+
+.random-wiki:hover {
+  color: #444;
 }
 
 @media (max-width: 450px){
@@ -154,7 +167,7 @@ h1 {
   100% {opacity: 1;}
 }
 
-a {
+.search-link {
   display: inline-block;
   position: relative;
   width: 23.5%;
@@ -168,7 +181,7 @@ a {
   animation: fade-in-up .5s;
 }
 
-a:hover {
+.search-link:hover {
   border-bottom: 8px solid #fff;
   transition: all .3s ease-out;
 }
@@ -196,100 +209,100 @@ p:first-letter {
     5. LINK COLORS
 ============================================================*/
 
-a.red {
+.red {
   background-color: #ce4343;
 }
 
-a.red:hover {
+.red:hover {
   background-color: #a93737;
   transition: all .3s ease-out;
 }
 
 
-a.orange {
+.orange {
   background-color: #e28d47;
 }
 
-a.orange:hover {
+.orange:hover {
   background-color: #b97339;
   transition: all .3s ease-out;
 }
 
 
-a.yellow {
+.yellow {
   background-color: #e0cc47;
 }
 
-a.yellow:hover {
+.yellow:hover {
   background-color: #bdac3c;
   transition: all .3s ease-out;
 }
 
 
-a.lime {
+.lime {
   background-color: #a8d251;
 }
 
-a.lime:hover {
+.lime:hover {
   background-color: #89ad40;
   transition: all .3s ease-out;
 }
 
-a.green {
+.green {
   background-color: #4caf50;
 }
 
-a.green:hover {
+.green:hover {
   background-color: #3b883e;
   transition: all .3s ease-out;
 }
 
 
-a.light-teal {
+.light-teal {
   background-color: #46bfb3;
 }
 
-a.light-teal:hover {
+.light-teal:hover {
   background-color: #399c92;
   transition: all .3s ease-out;
 }
 
 
-a.teal {
+.teal {
   background-color: #4a7fa7;
 }
 
-a.teal:hover {
+.teal:hover {
   background-color: #38617f;
   transition: all .3s ease-out;
 }
 
 
-a.purple {
+.purple {
   background-color: #5f49a7;
 }
 
-a.purple:hover {
+.purple:hover {
   background-color: #46357b;
   transition: all .3s ease-out;
 }
 
 
-a.violet {
+.violet {
   background-color: #962bbb;
 }
 
-a.violet:hover {
+.violet:hover {
   background-color: #7c249a;
   transition: all .3s ease-out;
 }
 
 
-a.pink {
+.pink {
   background-color: #f168bc;
 }
 
-a.pink:hover {
+.pink:hover {
   background-color: #bf5295;
   transition: all .3s ease-out;
 }
